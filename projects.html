@@ -2,175 +2,181 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Analyst-focused academic project case studies by Leah Jane Gregorio, covering systems analysis, business research, database documentation, QA, and product documentation." />
   <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>My Projects</title>
+  <title>Projects | Leah Jane Gregorio</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/projects.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body id="top">
-
-  <!-- ✅ NAVBAR -->
   <header class="navbar">
-    <div class="logo">
-      <img src="photos/nu_logo.png" alt="NU Logo" />
-      <span>National University</span>
-    </div>
+    <a class="logo" href="index.html" aria-label="Leah Jane Gregorio home">
+      <span class="logo-mark">LG</span>
+      <span>Leah Jane Gregorio</span>
+    </a>
     <nav>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contacts.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ✅ PROJECTS SECTION -->
-  <section class="projects-section">
-    <h2 class="section-title">Projects</h2>
-    <p class="section-subtitle">
-      A showcase of academic and personal projects that reflect my growing skills in front-end development, user interface design, and logic-based systems.
-    </p>
+  <main class="projects-page">
+    <section class="projects-hero">
+      <p class="eyebrow">Academic project case studies</p>
+      <h1>Projects focused on analysis, documentation, data organization, and QA review.</h1>
+      <p>
+        These are academic and project-based examples that show how I approach system purpose,
+        business problems, database planning, documentation, and manual review. They are written for
+        entry-level IT Business Analyst, Business Analyst, Systems Analyst, QA Analyst, and Data Analyst roles.
+      </p>
+    </section>
 
-    <div class="project-grid">
-
-      <!-- 🔹 Project 1 -->
-      <div class="project-card" data-aos="flip-left" data-aos-delay="100">
-        <div class="flip-card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <iframe src="https://drive.google.com/file/d/1bnyxZGoPV8EKA9iGyLJvc9F9k_P_lBQm/preview" allow="autoplay" loading="lazy"></iframe>
-            </div>
-            <div class="flip-back">
-              <div class="card-content">
-                <h3>ALC Bank System</h3>
-                <p>A beginner banking simulation with login, deposit, and balance tracking. Built with pure HTML, CSS, and JS.</p>
-                <div class="project-tags">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <ul class="project-highlights">
-                  <li><strong>Pros:</strong> Beginner-friendly interface and accurate logic</li>
-                  <li><strong>Cons:</strong> No data storage or backend functionality</li>
-                  <li><strong>Challenges:</strong> Handling input edge cases properly</li>
-                </ul>
-                <a href="project1.html" class="btn-glow">View Demo</a>
-              </div>
-            </div>
+    <section class="flagship-project" id="campus-event">
+      <div class="case-study-panel">
+        <p class="eyebrow">Featured case study</p>
+        <h2>Campus Event Management System</h2>
+        <dl class="case-study-details">
+          <div>
+            <dt>Role</dt>
+            <dd>Student systems analyst and documentation contributor</dd>
           </div>
-        </div>
-      </div>
-
-      <!-- 🔹 Project 2 -->
-      <div class="project-card" data-aos="flip-left" data-aos-delay="200">
-        <div class="flip-card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <iframe src="https://drive.google.com/file/d/13g9AnXs26zEJxVn91j4e-U71jarT2SB4/preview" allow="autoplay" loading="lazy"></iframe>
-            </div>
-            <div class="flip-back">
-              <div class="card-content">
-                <h3>LuxeShip Booking System</h3>
-                <p>A ship booking prototype inspired by 2GO, with real-time form validation, class selection, and a summary modal.</p>
-                <div class="project-tags">
-                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                </div>
-                <ul class="project-highlights">
-                  <li><strong>Pros:</strong> Clean UI and real-time logic flow</li>
-                  <li><strong>Cons:</strong> Static site only, no backend</li>
-                  <li><strong>Challenges:</strong> Managing multi-step forms effectively</li>
-                </ul>
-                <a href="project2.html" class="btn-glow">View Demo</a>
-              </div>
-            </div>
+          <div>
+            <dt>Tools Used</dt>
+            <dd>Documentation tools, database planning notes, diagrams, SQL concepts</dd>
           </div>
-        </div>
-      </div>
-
-      <!-- 🔹 Project 3 -->
-      <div class="project-card" data-aos="flip-left" data-aos-delay="300">
-        <div class="flip-card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <iframe src="https://drive.google.com/file/d/1V52-1jAfpn-65UkEHRh_gux-yyEroqbx/preview" allow="autoplay" loading="lazy"></iframe>
-            </div>
-            <div class="flip-back">
-              <div class="card-content">
-                <h3>Claudia Website</h3>
-                <p>Dark-themed static website made for layout testing and animation practice. Fully responsive and visually clean.</p>
-                <div class="project-tags">
-                  <span>HTML</span><span>CSS</span><span>Animations</span>
-                </div>
-                <ul class="project-highlights">
-                  <li><strong>Pros:</strong> Mobile-friendly layout with animation</li>
-                  <li><strong>Cons:</strong> No backend or interactivity</li>
-                  <li><strong>Challenges:</strong> Achieving layout balance across screen sizes</li>
-                </ul>
-                <a href="project3.html" class="btn-glow">View Demo</a>
-              </div>
-            </div>
+          <div>
+            <dt>Problem/Purpose</dt>
+            <dd>Campus events need organized records for event details, schedules, participants, approvals, and updates.</dd>
           </div>
-        </div>
-      </div>
-
-      <!-- 🔹 Project 4 -->
-      <div class="project-card" data-aos="flip-left" data-aos-delay="400">
-        <div class="flip-card">
-          <div class="flip-inner">
-            <div class="flip-front">
-              <iframe src="https://drive.google.com/file/d/1TP-2VURsI0RGCm3x7o0IjY8E6nsE-RBS/preview" allow="autoplay" loading="lazy"></iframe>
-            </div>
-            <div class="flip-back">
-              <div class="card-content">
-                <h3>POS1: Point-of-Sale System</h3>
-                <p>A point-of-sale system developed in Java using NetBeans IDE. It includes login validation, inventory updates, transaction processing, and receipt generation.</p>
-                <div class="project-tags">
-                  <span>Java</span><span>Netbeans</span>
-                </div>
-                <ul class="project-highlights">
-                  <li><strong>Pros:</strong> Mimics real inventory and transaction logic</li>
-                  <li><strong>Cons:</strong> File-based only, no database connection</li>
-                  <li><strong>Challenges:</strong> Stock management and dynamic updates</li>
-                </ul>
-                <a href="https://drive.google.com/file/d/1kh17DnFqhTPBQmz62DB8F_he24W0FMNP/view?usp=sharing" class="btn-glow" target="_blank">View Demo</a>
-              </div>
-            </div>
+          <div>
+            <dt>What I Did</dt>
+            <dd>Outlined the system purpose, identified key users, listed important records, mapped basic event workflows, and prepared documentation to support system development.</dd>
           </div>
-        </div>
+          <div>
+            <dt>Outputs</dt>
+            <dd>System overview, database-related notes, feature list, workflow notes, and documentation for event management records.</dd>
+          </div>
+          <div>
+            <dt>Skills Demonstrated</dt>
+            <dd>Systems analysis, database documentation, requirements thinking, process understanding, and clear written communication.</dd>
+          </div>
+        </dl>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section class="project-grid" aria-label="Project case study cards">
+      <article class="project-card case-study-card">
+        <div class="project-card-content">
+          <p class="project-rank">Business and data analysis</p>
+          <h2>Small Business Challenges Research</h2>
+          <dl class="mini-case">
+            <div>
+              <dt>Role</dt>
+              <dd>Student business/data analysis contributor</dd>
+            </div>
+            <div>
+              <dt>Tools Used</dt>
+              <dd>Research notes, spreadsheet-style organization, summary documentation</dd>
+            </div>
+            <div>
+              <dt>Problem/Purpose</dt>
+              <dd>Small businesses face challenges such as limited resources, customer reach, operational issues, and technology adoption.</dd>
+            </div>
+            <div>
+              <dt>What I Did</dt>
+              <dd>Reviewed gathered information, organized findings by theme, identified repeated issues, and summarized possible improvement areas.</dd>
+            </div>
+            <div>
+              <dt>Outputs</dt>
+              <dd>Research summary, categorized business challenges, observations, and practical recommendations.</dd>
+            </div>
+            <div>
+              <dt>Skills Demonstrated</dt>
+              <dd>Business analysis, data organization, research interpretation, summary writing, and problem identification.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
 
-  <!-- ✅ FOOTER -->
+      <article class="project-card case-study-card">
+        <div class="project-card-content">
+          <p class="project-rank">CRUD and database documentation</p>
+          <h2>Music Playlist Management System</h2>
+          <dl class="mini-case">
+            <div>
+              <dt>Role</dt>
+              <dd>Student systems/database documentation contributor</dd>
+            </div>
+            <div>
+              <dt>Tools Used</dt>
+              <dd>Database concepts, CRUD notes, documentation tools</dd>
+            </div>
+            <div>
+              <dt>Problem/Purpose</dt>
+              <dd>A playlist system needs a clear way to add, view, update, and delete songs while keeping song records organized.</dd>
+            </div>
+            <div>
+              <dt>What I Did</dt>
+              <dd>Documented the basic CRUD flow, identified important data fields, described user actions, and organized the system logic in a readable format.</dd>
+            </div>
+            <div>
+              <dt>Outputs</dt>
+              <dd>CRUD documentation, data field list, feature notes, and simple system behavior description.</dd>
+            </div>
+            <div>
+              <dt>Skills Demonstrated</dt>
+              <dd>Database documentation, systems thinking, data organization, CRUD understanding, and clear technical writing.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="project-card case-study-card">
+        <div class="project-card-content">
+          <p class="project-rank">QA and product documentation</p>
+          <h2>Mobile App Manual/Revision Documentation</h2>
+          <dl class="mini-case">
+            <div>
+              <dt>Role</dt>
+              <dd>Student QA/product documentation contributor</dd>
+            </div>
+            <div>
+              <dt>Tools Used</dt>
+              <dd>Mobile app review, manual documentation, revision notes</dd>
+            </div>
+            <div>
+              <dt>Problem/Purpose</dt>
+              <dd>A mobile application needs clear user guidance and revision documentation so features, changes, and instructions are easier to understand.</dd>
+            </div>
+            <div>
+              <dt>What I Did</dt>
+              <dd>Reviewed app screens and features, wrote user-facing documentation, recorded revisions, and described changes in a structured way.</dd>
+            </div>
+            <div>
+              <dt>Outputs</dt>
+              <dd>User manual content, revision documentation, feature descriptions, and QA-style observations.</dd>
+            </div>
+            <div>
+              <dt>Skills Demonstrated</dt>
+              <dd>QA review, product documentation, attention to detail, user guidance writing, and revision tracking.</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </section>
+  </main>
+
   <footer class="footer">
-    <p>&copy; 2025 National University – BSIT Portfolio. All rights reserved.</p>
-    <p><a href="#top" class="back-to-top">⬆ Back to Top</a></p>
+    <p>&copy; 2026 Leah Jane Gregorio. Analyst portfolio.</p>
+    <p><a href="#top" class="back-to-top">Back to Top</a></p>
   </footer>
 
-  <!-- ✅ SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100
-    });
-
-    const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

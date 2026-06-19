@@ -42,6 +42,11 @@ body {
   animation: drop-scroll 2s linear infinite;
 }
 
+@keyframes drop-scroll {
+  from { transform: translateY(-12px); }
+  to { transform: translateY(12px); }
+}
+
 
 /* HEADER */
 .main-header {

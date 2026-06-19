@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     else if (age <= 17) discount = 0.1;
 
     const finalFare = discount === 1 ? 0 : base - (base * discount);
-    document.getElementById("fare").value = `₱${finalFare.toLocaleString()}`;
+    document.getElementById("fare").value = `PHP ${finalFare.toLocaleString()}`;
     document.getElementById("fare").dataset.final = finalFare;
   };
 
@@ -101,16 +101,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const cls = document.getElementById("class").value;
     const code = `LS-${Math.floor(100000 + Math.random() * 900000)}`;
 
-    const qrData = `${code}|${name}|${from}->${to}|${date} ${time}|₱${finalFare}`;
+    const qrData = `${code}|${name}|${from}->${to}|${date} ${time}|PHP ${finalFare}`;
     document.getElementById("qr-code").src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrData)}`;
 
     document.getElementById("receipt-text").innerHTML = `
       <strong>Booking Code:</strong> ${code}<br>
       <strong>Name:</strong> ${name}<br>
-      <strong>Route:</strong> ${from} ➜ ${to}<br>
-      <strong>Date:</strong> ${date} – ${time}<br>
+      <strong>Route:</strong> ${from} to ${to}<br>
+      <strong>Date:</strong> ${date} - ${time}<br>
       <strong>Class:</strong> ${cls}<br>
-      <strong>Fare:</strong> ₱${parseFloat(finalFare).toLocaleString()}
+      <strong>Fare:</strong> PHP ${parseFloat(finalFare).toLocaleString()}
     `;
     document.getElementById("receipt-modal").classList.remove("hidden");
 

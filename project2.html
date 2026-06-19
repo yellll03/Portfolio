@@ -2,37 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>LuxeShip Booking</title>
+  <title>LuxeShip Booking Workflow</title>
   <link rel="stylesheet" href="css/project2.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- NAVIGATION -->
   <header class="navbar">
     <h1 class="logo">LuxeShip</h1>
     <div id="scroll-progress"></div>
   </header>
 
-  <!-- LANDING PAGE -->
   <section class="landing">
-    <h1>Experience Luxurious Sea Travel</h1>
-    <p>Sail between Odiongan and Batangas in comfort and style.</p>
+    <h1>Passenger Booking Workflow</h1>
+    <p>Sail between Odiongan and Batangas with a guided booking process.</p>
     <button class="btn-landing" id="go-to-booking">Book Now</button>
   </section>
 
-  <!-- BOOKING WIZARD -->
   <main class="container" id="booking-section">
     <div class="progress-bar">
-      <div class="step active" id="step1">1. Travel Info</div>
+      <div class="step active" id="step1">1. Passenger Info</div>
       <div class="step" id="step2">2. Travel Details</div>
-      <div class="step" id="step3">3. Review & Confirm</div>
+      <div class="step" id="step3">3. Review</div>
     </div>
 
-    <!-- FORM -->
     <form id="booking-form">
-      <!-- STEP 1 -->
       <div class="form-step" id="form-step-1">
         <h2>Passenger Information</h2>
         <label>Full Name: <input type="text" id="name" required /></label>
@@ -45,11 +40,10 @@
             <option>Other</option>
           </select>
         </label>
-        <label>Email (optional): <input type="email" id="email" /></label>
+        <label>Email: <input type="email" id="email" required /></label>
         <button type="button" id="next1" class="btn">Next</button>
       </div>
 
-      <!-- STEP 2 -->
       <div class="form-step hidden" id="form-step-2">
         <h2>Travel Details</h2>
         <label>From:
@@ -71,10 +65,10 @@
         <label>Class:
           <select id="class" required>
             <option value="">Select</option>
-            <option value="Super Value">Super Value – ₱700</option>
-            <option value="Tourist">Tourist – ₱900</option>
-            <option value="Cabin">Cabin – ₱1200</option>
-            <option value="Suite">Suite – ₱1500</option>
+            <option value="Super Value">Super Value - PHP 700</option>
+            <option value="Tourist">Tourist - PHP 900</option>
+            <option value="Cabin">Cabin - PHP 1200</option>
+            <option value="Suite">Suite - PHP 1500</option>
           </select>
         </label>
         <label>Total Fare: <input type="text" id="fare" readonly /></label>
@@ -85,9 +79,8 @@
         </div>
       </div>
 
-      <!-- STEP 3 -->
       <div class="form-step hidden" id="form-step-3">
-        <h2>Review & Confirm</h2>
+        <h2>Review and Confirm</h2>
         <div id="review-summary"></div>
 
         <div class="button-group">
@@ -99,23 +92,18 @@
     </form>
   </main>
 
-  <!-- RECEIPT MODAL -->
   <div id="receipt-modal" class="modal hidden">
     <div class="modal-content">
       <span id="close-modal">&times;</span>
       <h3>Booking Receipt</h3>
       <p id="receipt-text"></p>
-      <img id="qr-code" alt="QR Code" />
+      <img id="qr-code" alt="Generated QR code for booking receipt" />
     </div>
   </div>
 
-  <!-- THANK YOU TOAST -->
-  <div id="thankyou-toast" class="hidden">✅ Booking Successful! Thank you for choosing LuxeShip.</div>
-
-  <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; 2025 LuxeShip. All rights reserved.</p>
-    <a href="projects.html" class="back-link">← Back to Projects</a>
+    <p>&copy; 2026 LuxeShip Booking Workflow.</p>
+    <a href="projects.html" class="back-link">Back to Projects</a>
   </footer>
 
   <script src="js/project2.js"></script>

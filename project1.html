@@ -2,105 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>ALC Bank Simulation</title>
+  <title>ALC Bank Transaction Simulator</title>
   <link rel="stylesheet" href="css/project1.css" />
 </head>
 <body>
-  <!-- HEADER -->
   <header>
-    <h1>🏦 ALC Bank</h1>
-    <p>Secure Banking Simulation</p>
+    <h1>ALC Bank</h1>
+    <p>Transaction Simulator</p>
   </header>
 
-  <!-- LOGIN SECTION -->
-  <div class="container" id="login-section">
-    <h2>Login to Your Account</h2>
-    <input type="text" id="username" placeholder="Username" />
+  <main>
+    <div class="container" id="login-section">
+      <h2>Login to Your Account</h2>
+      <input type="text" id="username" placeholder="Username" />
 
-    <div class="password-wrapper">
-      <input type="password" id="pin" placeholder="PIN (8 characters)" />
-      <span class="eye-toggle" onclick="togglePin()">👁</span>
+      <div class="password-wrapper">
+        <input type="password" id="pin" placeholder="PIN (8 characters)" />
+        <span class="eye-toggle" onclick="togglePin()">Show</span>
+      </div>
+
+      <button onclick="login()">Login</button>
+      <div class="error hidden" id="login-error">Invalid credentials. Please try again.</div>
     </div>
 
-    <button onclick="login()">Login</button>
-    <div class="error hidden" id="login-error">Invalid credentials. Please try again.</div>
-  </div>
-
-  <!-- MAIN MENU -->
-  <div class="container hidden" id="main-menu">
-    <h2>Main Menu</h2>
-    <div class="vertical-buttons">
-      <button onclick="showSection('deposit-section')">Deposit</button>
-      <button onclick="showSection('withdraw-section')">Withdraw</button>
-      <button onclick="showSection('balance-section')">Check Balance</button>
-      <button onclick="confirmLogout()">Logout</button>
+    <div class="container hidden" id="main-menu">
+      <h2>Main Menu</h2>
+      <div class="vertical-buttons">
+        <button onclick="showSection('deposit-section')">Deposit</button>
+        <button onclick="showSection('withdraw-section')">Withdraw</button>
+        <button onclick="showSection('balance-section')">Check Balance</button>
+        <button onclick="confirmLogout()">Logout</button>
+      </div>
     </div>
-  </div>
 
-  <!-- DEPOSIT SECTION -->
-  <div class="container hidden" id="deposit-section">
-    <h2>Deposit Funds</h2>
-    <label for="account-type-deposit">Select Account:</label>
-    <select id="account-type-deposit">
-      <option value="">-- Choose Account --</option>
-      <option value="savings">Savings</option>
-      <option value="current">Current</option>
-    </select>
+    <div class="container hidden" id="deposit-section">
+      <h2>Deposit Funds</h2>
+      <label for="account-type-deposit">Select Account:</label>
+      <select id="account-type-deposit">
+        <option value="">-- Choose Account --</option>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+      </select>
 
-    <label for="deposit-options">Choose Amount:</label>
-    <select id="deposit-options">
-      <option value="">-- Select an amount --</option>
-      <option value="100">PHP 100</option>
-      <option value="500">PHP 500</option>
-      <option value="1000">PHP 1000</option>
-      <option value="custom">Other Amount</option>
-    </select>
-    <input type="number" id="deposit-amount" placeholder="Enter custom amount" class="hidden" />
+      <label for="deposit-options">Choose Amount:</label>
+      <select id="deposit-options">
+        <option value="">-- Select an amount --</option>
+        <option value="100">PHP 100</option>
+        <option value="500">PHP 500</option>
+        <option value="1000">PHP 1000</option>
+        <option value="custom">Other Amount</option>
+      </select>
+      <input type="number" id="deposit-amount" placeholder="Enter custom amount" class="hidden" />
 
-    <div class="vertical-buttons">
-      <button onclick="deposit()">Submit</button>
-      <button onclick="confirmCancel()">Cancel</button>
+      <div class="vertical-buttons">
+        <button onclick="deposit()">Submit</button>
+        <button onclick="confirmCancel()">Cancel</button>
+      </div>
+      <div class="success hidden" id="deposit-success">Deposit successful.</div>
     </div>
-    <div class="success hidden" id="deposit-success">Deposit successful!</div>
-  </div>
 
-  <!-- WITHDRAW SECTION -->
-  <div class="container hidden" id="withdraw-section">
-    <h2>Withdraw Funds</h2>
-    <label for="account-type-withdraw">Select Account:</label>
-    <select id="account-type-withdraw">
-      <option value="">-- Choose Account --</option>
-      <option value="savings">Savings</option>
-      <option value="current">Current</option>
-    </select>
+    <div class="container hidden" id="withdraw-section">
+      <h2>Withdraw Funds</h2>
+      <label for="account-type-withdraw">Select Account:</label>
+      <select id="account-type-withdraw">
+        <option value="">-- Choose Account --</option>
+        <option value="savings">Savings</option>
+        <option value="current">Current</option>
+      </select>
 
-    <input type="number" id="withdraw-amount" placeholder="Enter amount (min PHP 500)" />
+      <input type="number" id="withdraw-amount" placeholder="Enter amount (min PHP 500)" />
 
-    <div class="vertical-buttons">
-      <button onclick="withdraw()">Submit</button>
-      <button onclick="confirmCancel()">Cancel</button>
+      <div class="vertical-buttons">
+        <button onclick="withdraw()">Submit</button>
+        <button onclick="confirmCancel()">Cancel</button>
+      </div>
+      <div class="error hidden" id="withdraw-error">Insufficient funds or amount too low.</div>
+      <div class="success hidden" id="withdraw-success">Withdrawal successful.</div>
     </div>
-    <div class="error hidden" id="withdraw-error">Insufficient funds or amount too low.</div>
-    <div class="success hidden" id="withdraw-success">Withdrawal successful!</div>
-  </div>
 
-  <!-- BALANCE SECTION -->
-  <div class="container hidden" id="balance-section">
-    <h2>Account Balance</h2>
-    <p>Account Type: <strong id="account-type-display">N/A</strong></p>
-    <p>Current Balance: <strong id="balance-display">PHP 0.00</strong></p>
-    <div class="vertical-buttons">
-      <button onclick="returnToMenu()">Back</button>
+    <div class="container hidden" id="balance-section">
+      <h2>Account Balance</h2>
+      <p>Account Type: <strong id="account-type-display">N/A</strong></p>
+      <p>Current Balance: <strong id="balance-display">PHP 0.00</strong></p>
+      <div class="vertical-buttons">
+        <button onclick="returnToMenu()">Back</button>
+      </div>
     </div>
-  </div>
+  </main>
 
-  <!-- FOOTER -->
   <footer>
-  <p>&copy; 2025 ALC Bank Simulation. All rights reserved.</p>
-  <a href="projects.html" class="back-link">← Back to Projects</a>
-</footer>
+    <p>&copy; 2026 ALC Bank Transaction Simulator.</p>
+    <a href="projects.html" class="back-link">Back to Projects</a>
+  </footer>
 
   <script src="js/project1.js"></script>
 </body>

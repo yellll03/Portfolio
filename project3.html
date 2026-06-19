@@ -4,23 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title> Claudia </title>
+  <title>Claudia Focus Timer</title>
   <link rel="stylesheet" href="css/project3.css" />
 </head>
 <body>
   <header class="main-header">
-    <h1> Claudia 𓂃ﾟ ⋆ ﾟ ☂︎ 🍂༄˖° </h1>
-    <p>Your cozy space to focus, reflect, and grow—one raindrop at a time.</p>
+    <h1>Claudia Focus Timer</h1>
+    <p>A quiet focus session tool with task tracking and ambient sound options.</p>
   </header>
 
-  <aside class="scroll-sidebar"></aside>
-  
-
+  <aside class="scroll-sidebar" aria-hidden="true"></aside>
 
   <main class="main-wrapper">
     <section class="focus-panel">
       <div class="timer-box glass">
-        <h2>⏳ Focus Session</h2>
+        <h2>Focus Session</h2>
         <label for="focus-time">Choose Time:</label>
         <select id="focus-time">
           <option value="900">15 minutes</option>
@@ -47,44 +45,42 @@
       </div>
 
       <div class="todo-box glass">
-        <h2>📝 To-Do List</h2>
+        <h2>To-Do List</h2>
         <input type="text" id="task-input" placeholder="Add a task..." />
         <button onclick="addTask()">Add</button>
         <ul id="task-list" class="task-list"></ul>
       </div>
     </section>
 
-<section class="sound-box glass">
-  <label for="sound-theme">🎵 Choose Your Rain Sound:</label>
-  <select id="sound-theme" onchange="changeSound()">
-    <option value="lofi">☁️ Rainy Lo-fi Chill</option>
-    <option value="cafe">☕ Umbrella Café Ambience</option>
-    <option value="window">🌧️ Rain on Street Vibes</option>
-  </select>
+    <section class="sound-box glass">
+      <label for="sound-theme">Choose Your Rain Sound:</label>
+      <select id="sound-theme" onchange="changeSound()">
+        <option value="lofi">Rainy Lo-fi Chill</option>
+        <option value="cafe">Umbrella Cafe Ambience</option>
+        <option value="window">Rain on Street Vibes</option>
+      </select>
 
-  <div class="yt-embed">
-    <iframe
-      id="yt-player"
-      src=""
-      title="RainyFocus Sounds"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen>
-    </iframe>
-  </div>
-</section>
-
-
+      <div class="yt-embed">
+        <iframe
+          id="yt-player"
+          src=""
+          title="Claudia ambient sounds"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
     <section class="quote-box">
-      <p id="quote">“Let the rain remind you to slow down and grow.”</p>
+      <p id="quote">Let the rain remind you to slow down and grow.</p>
     </section>
   </main>
 
   <footer class="glass footer-box">
-    <p>☁️ &copy; 2025 Claudia 𓂃ﾟ ⋆ ﾟ ☂︎ 🍂༄˖°  • Stay grounded. Stay focused.</p>
-    <a href="projects.html" class="back-link">← Back to Projects</a>
+    <p>&copy; 2026 Claudia Focus Timer.</p>
+    <a href="projects.html" class="back-link">Back to Projects</a>
   </footer>
 
   <script src="js/project3.js"></script>

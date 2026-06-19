@@ -24,7 +24,7 @@ function startTimer() {
       } else {
         clearInterval(timer);
         timer = null;
-        alert("Time's up! Great job ☁️");
+        alert("Time's up! Great job.");
       }
     }, 1000);
   }
@@ -76,16 +76,13 @@ function addTask() {
     return;
   }
 
-  const rainEmojis = ['🌧️', '☂️', '⛈️', '🌂', '💧'];
-  const emoji = rainEmojis[Math.floor(Math.random() * rainEmojis.length)];
-
   const li = document.createElement('li');
 
   const textDiv = document.createElement('div');
   textDiv.className = 'task-text';
 
   const taskSpan = document.createElement('span');
-  taskSpan.textContent = `${emoji} ${task}`;
+  taskSpan.textContent = task;
 
   textDiv.appendChild(taskSpan);
 
@@ -93,22 +90,22 @@ function addTask() {
   btnDiv.className = 'task-buttons';
 
   const doneBtn = document.createElement('button');
-  doneBtn.textContent = '✅';
+  doneBtn.textContent = 'Done';
   doneBtn.title = 'Finish';
   doneBtn.onclick = () => {
     li.classList.toggle('completed');
   };
 
   const editBtn = document.createElement('button');
-  editBtn.textContent = '✏️';
+  editBtn.textContent = 'Edit';
   editBtn.title = 'Edit';
   editBtn.onclick = () => {
-    const newText = prompt('Edit your task:', taskSpan.textContent.replace(emoji + ' ', ''));
-    if (newText) taskSpan.textContent = `${emoji} ${newText}`;
+    const newText = prompt('Edit your task:', taskSpan.textContent);
+    if (newText) taskSpan.textContent = newText;
   };
 
   const delBtn = document.createElement('button');
-  delBtn.textContent = '❌';
+  delBtn.textContent = 'Delete';
   delBtn.title = 'Delete';
   delBtn.onclick = () => taskList.removeChild(li);
 

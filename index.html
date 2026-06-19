@@ -3,115 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Leah Jane Gregorio, an aspiring IT Business Analyst focused on systems, data, QA documentation, and academic project analysis." />
   <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>Creative Portfolio</title>
+  <title>Leah Jane Gregorio | Analyst Portfolio</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/index.css" />
-
-  <style>
-    /* Typing Animation */
-    .typed-text {
-      font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block;
-    }
-
-    .cursor {
-      display: inline-block;
-      color: #1e90ff;
-      animation: blink 0.7s infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-  </style>
 </head>
-<body>
-  <!-- NAVIGATION -->
+<body id="top">
   <header class="navbar">
-    <div class="logo">
-      <img src="photos/nu_logo.png" alt="National University Logo" />
-      <span>National University</span>
-    </div>
+    <a class="logo" href="index.html" aria-label="Leah Jane Gregorio home">
+      <span class="logo-mark">LG</span>
+      <span>Leah Jane Gregorio</span>
+    </a>
     <nav>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contacts.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1><span class="dot">•</span> <span class="typed-text"></span><span class="cursor">|</span></h1>
-      <h3>BSIT-MWA Student | Aspiring Web Developer</h3>
-      <p>
-        I’m a 2nd Year BSIT student majoring in Mobile and Web Applications. I’m passionate about web development and currently honing my skills in building interactive, responsive, and user-centered websites. This portfolio showcases my learning journey, projects, and growing interest in the world of technology.
-      </p>
-      <a href="about.html" class="animated-btn">Additional Information About Me</a>
-    </div>
-    <div class="avatar">
-      <img src="photos/icon1.png" alt="Portrait of Ali, Web Developer" />
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Aspiring IT Business Analyst | BSIT Student | Systems, Data & QA Documentation</p>
+        <h1>Turning academic systems and research projects into clear analysis, documentation, and testing outputs.</h1>
+        <p>
+          I am a 4th-year BSIT student interested in entry-level IT Business Analyst, Business Analyst,
+          Systems Analyst, QA Analyst, and Data Analyst roles. My portfolio focuses on academic projects where I practiced
+          requirements gathering, process understanding, database documentation, manual review, and clear project outputs.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a href="projects.html" class="btn primary">View Projects</a>
+          <a href="contacts.html" class="btn secondary">Contact Me</a>
+          <a href="https://www.linkedin.com/in/leigh-largueza-8aa41819b" class="text-link" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Portfolio highlights">
+        <img src="photos/gregorio-id.png" alt="Portrait of Leah Jane Gregorio" />
+        <div class="hero-stats">
+          <span><strong>Analysis</strong> Requirements, workflows, problem statements</span>
+          <span><strong>Documentation</strong> Manuals, revisions, database notes</span>
+          <span><strong>QA and data</strong> Test observations, research summaries, reports</span>
+        </div>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
+    <section class="featured-project">
+      <div class="section-heading">
+        <p class="eyebrow">Featured case study</p>
+        <h2>Campus Event Management System</h2>
+        <p>
+          A system analysis and database documentation project focused on organizing campus event information,
+          participants, schedules, approvals, and event-related records.
+        </p>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-media">
+          <div class="documentation-preview" aria-label="Campus Event Management System documentation preview">
+            <h3>Campus Event Management System</h3>
+            <div>
+              <span>Users</span>
+              <p>Students, organizers, administrators</p>
+            </div>
+            <div>
+              <span>Records</span>
+              <p>Events, schedules, participants, approvals</p>
+            </div>
+            <div>
+              <span>Outputs</span>
+              <p>System overview, workflow notes, database planning</p>
+            </div>
+          </div>
+        </div>
+        <div class="feature-panel">
+          <h3>Analyst focus</h3>
+          <p>
+            This project shows how I approach a system from an analyst perspective: identifying users,
+            defining the purpose of the system, outlining records needed, and organizing documentation that can guide development.
+          </p>
+          <div class="feature-list">
+            <span>System analysis</span>
+            <span>Database planning</span>
+            <span>Workflow notes</span>
+            <span>Documentation</span>
+            <span>Academic project</span>
+          </div>
+          <a href="projects.html#campus-event" class="btn primary">View Case Study</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-snapshot">
+      <div class="section-heading">
+        <p class="eyebrow">Core skills</p>
+        <h2>Skills I am building for analyst and QA roles</h2>
+      </div>
+      <div class="skill-grid">
+        <article>
+          <h3>Business and systems analysis</h3>
+          <p>Problem statements, user needs, process flow understanding, requirements notes, and system purpose documentation.</p>
+        </article>
+        <article>
+          <h3>Data and database documentation</h3>
+          <p>Basic SQL concepts, CRUD understanding, entity and field planning, research summaries, and organized data outputs.</p>
+        </article>
+        <article>
+          <h3>QA and product documentation</h3>
+          <p>Manual review, revision tracking, feature documentation, test observations, and clear communication of issues.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-    <p>&copy; 2025 National University – BSIT Portfolio. All rights reserved.</p>
-    <p><a href="#top" class="back-to-top">⬆ Back to Top</a></p>
+    <p>&copy; 2026 Leah Jane Gregorio. Analyst portfolio.</p>
+    <p><a href="#top" class="back-to-top">Back to Top</a></p>
   </footer>
 
-  <!-- SCRIPT -->
-  <script>
-    // Mobile nav toggle
-    document.addEventListener("DOMContentLoaded", () => {
-      const toggle = document.getElementById('menu-toggle');
-      const navLinks = document.getElementById('nav-links');
-      toggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-      });
-    });
-
-    // Typing animation loop
-    const words = ["Hello, I'm Leah"];
-    const typedText = document.querySelector(".typed-text");
-    const cursor = document.querySelector(".cursor");
-
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingDelay = 100;
-    let erasingDelay = 60;
-    let newWordDelay = 1500;
-
-    function typeLoop() {
-      const currentWord = words[wordIndex];
-
-      if (!isDeleting && charIndex <= currentWord.length) {
-        typedText.textContent = currentWord.substring(0, charIndex++);
-        setTimeout(typeLoop, typingDelay);
-      } else if (isDeleting && charIndex >= 0) {
-        typedText.textContent = currentWord.substring(0, charIndex--);
-        setTimeout(typeLoop, erasingDelay);
-      } else {
-        isDeleting = !isDeleting;
-        if (!isDeleting) {
-          wordIndex = (wordIndex + 1) % words.length;
-        }
-        setTimeout(typeLoop, newWordDelay);
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      setTimeout(typeLoop, 500);
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -3,91 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Leah Jane Gregorio for entry-level IT Business Analyst, Business Analyst, Systems Analyst, QA Analyst, and Data Analyst opportunities." />
   <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>Contact Me</title>
-
-  <!-- CSS Files -->
+  <title>Contact | Leah Jane Gregorio</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/contacts.css" />
-
-  <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- Animate on Scroll -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
-<body>
-
-  <!-- Navbar -->
+<body id="top">
   <header class="navbar">
-    <div class="logo">
-      <img src="photos/nu_logo.png" alt="NU Logo" />
-      <span>National University</span>
-    </div>
+    <a class="logo" href="index.html" aria-label="Leah Jane Gregorio home">
+      <span class="logo-mark">LG</span>
+      <span>Leah Jane Gregorio</span>
+    </a>
     <nav>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contacts.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="contact-container" data-aos="fade-up">
+  <main class="contact-page">
+    <section class="contact-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>Open to entry-level analyst, QA, data, and documentation-focused opportunities.</h1>
+      <p>
+        I am looking for internships or entry-level roles where I can apply academic project experience in
+        system analysis, business research, data organization, QA review, and clear documentation.
+      </p>
+    </section>
 
-      <!-- Left -->
-      <div class="contact-left" data-aos="fade-right">
-        <h2>Let’s Work Together</h2>
-        <p>If you have any questions, project proposals, or just want to connect, feel free to reach out. I'm always open to collaboration and new ideas.</p>
-        <div class="contact-icons">
-          <div class="contact-icons">
-            <a href="https://m.me/leeyy.az1" target="_blank" aria-label="Messenger" title="Message me on Messenger">
-              <i class="fab fa-facebook-messenger"></i>
-            </a>
-            <a href="mailto:leighlargueza@gmail.com" target="_blank" aria-label="Gmail" title="Email me via Gmail">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="mailto:gregorioll@students.nu-moa.edu.ph" target="_blank" aria-label="Microsoft Teams" title="Message me on Teams">
-              <i class="fab fa-microsoft"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/leigh-largueza-8aa41819b" target="_blank" aria-label="LinkedIn" title="Connect with me on LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="tel:+639283182050" target="_blank" aria-label="Phone" title="Call me">
-              <i class="fas fa-phone"></i>
-            </a>
+    <section class="contact-grid">
+      <article class="contact-panel">
+        <h2>Direct links</h2>
+        <div class="contact-links">
+          <a href="mailto:leighlargueza@gmail.com"><i class="fas fa-envelope"></i><span>leighlargueza@gmail.com</span></a>
+          <a href="mailto:gregorioll@students.nu-moa.edu.ph"><i class="fas fa-building-columns"></i><span>Student email</span></a>
+          <a href="tel:+639283182050"><i class="fas fa-phone"></i><span>+63 928 318 2050</span></a>
+          <a href="https://www.linkedin.com/in/leigh-largueza-8aa41819b" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><span>LinkedIn profile</span></a>
+          <a href="https://m.me/leeyy.az1" target="_blank" rel="noopener"><i class="fab fa-facebook-messenger"></i><span>Messenger</span></a>
         </div>
+      </article>
 
-      </div>
+      <article class="contact-panel">
+        <h2>Best-fit roles</h2>
+        <ul class="role-list">
+          <li>IT Business Analyst Intern</li>
+          <li>Entry-level Business Analyst</li>
+          <li>Systems Analyst Intern</li>
+          <li>QA Analyst Intern</li>
+          <li>Entry-level Data Analyst</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 
-      <!-- Right -->
-      <div class="contact-right" data-aos="fade-left">
-        <form id="contactForm" class="contact-form">
-          <input type="text" id="name" name="name" placeholder="Full Name" required />
-          <input type="email" id="email" name="email" placeholder="Email Address" required />
-          <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+  <button id="backToTopBtn" title="Back to Top">Top</button>
 
-    </div> <!-- CLOSE .contact-container -->
-  </section>
-
-  <!-- Back to Top Button -->
-  <button id="backToTopBtn" title="Back to Top">↑</button>
-
-  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 National University – BSIT Portfolio. All rights reserved.</p>
-    <p><a href="#top" class="back-to-top">⬆ Back to Top</a></p>
+    <p>&copy; 2026 Leah Jane Gregorio. Analyst portfolio.</p>
+    <p><a href="#top" class="back-to-top">Back to Top</a></p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src= "js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
