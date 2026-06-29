@@ -3,10 +3,6 @@
 }
 
 .about-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 40px;
-  align-items: center;
   margin-bottom: 42px;
 }
 
@@ -23,15 +19,6 @@
   max-width: 760px;
   color: var(--muted);
   line-height: 1.75;
-}
-
-.about-hero img {
-  width: 210px;
-  height: 210px;
-  border-radius: 8px;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.32);
 }
 
 .about-grid,
@@ -138,15 +125,9 @@
     padding: 52px 5%;
   }
 
-  .about-hero,
   .about-grid,
   .skills-columns {
     grid-template-columns: 1fr;
-  }
-
-  .about-hero img {
-    width: 180px;
-    height: 180px;
   }
 }
 

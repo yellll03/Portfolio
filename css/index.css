@@ -41,14 +41,6 @@
   gap: 18px;
 }
 
-.hero-card img {
-  width: min(100%, 380px);
-  justify-self: center;
-  border: 1px solid rgba(148, 163, 184, 0.24);
-  border-radius: 8px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
-}
-
 .hero-stats {
   display: grid;
   gap: 10px;
