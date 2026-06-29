@@ -21,6 +21,25 @@
   line-height: 1.75;
 }
 
+.portfolio-projects {
+  margin-bottom: 64px;
+}
+
+.portfolio-heading {
+  margin-bottom: 22px;
+}
+
+.portfolio-heading h2 {
+  margin-top: 8px;
+  color: var(--text);
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+  line-height: 1.25;
+}
+
+.analysis-heading {
+  margin-bottom: 22px;
+}
+
 .flagship-project {
   display: grid;
   grid-template-columns: 1fr;
@@ -124,6 +143,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   background: #0f172a;
 }
 
