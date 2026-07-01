@@ -7,18 +7,18 @@
 }
 
 :root {
-  --bg: #0b1120;
-  --panel: #111827;
-  --panel-soft: #172033;
-  --text: #f8fafc;
-  --muted: #cbd5e1;
-  --subtle: #94a3b8;
-  --line: rgba(148, 163, 184, 0.22);
-  --accent: #2dd4bf;
-  --accent-strong: #0f766e;
+  --bg: #0d1117;
+  --panel: #161b22;
+  --panel-soft: #1c2128;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --subtle: #656d76;
+  --line: rgba(230, 237, 243, 0.1);
+  --accent: #3b82f6;
+  --accent-strong: #2563eb;
   --blue: #3b82f6;
   --white: #ffffff;
-  --ink: #0f172a;
+  --ink: #0d1117;
 }
 
 html {
@@ -29,8 +29,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 15% 0%, rgba(45, 212, 191, 0.12), transparent 28%),
-    radial-gradient(circle at 85% 12%, rgba(59, 130, 246, 0.12), transparent 26%),
+    radial-gradient(circle at 20% 0%, rgba(59, 130, 246, 0.07), transparent 35%),
     var(--bg);
   color: var(--text);
   font-family: 'Inter', "Segoe UI", Arial, sans-serif;
@@ -81,7 +80,7 @@ a {
   height: 38px;
   border-radius: 8px;
   background: var(--accent);
-  color: #042f2e;
+  color: #ffffff;
   font-weight: 900;
 }
 
@@ -143,8 +142,8 @@ a {
 
 .btn.primary {
   background: var(--accent);
-  color: #042f2e;
-  box-shadow: 0 12px 24px rgba(45, 212, 191, 0.18);
+  color: #ffffff;
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.2);
 }
 
 .btn.secondary {
@@ -191,7 +190,7 @@ a {
   border: 0;
   border-radius: 50%;
   background: var(--accent);
-  color: #042f2e;
+  color: #ffffff;
   font-weight: 900;
   cursor: pointer;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);

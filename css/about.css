@@ -33,7 +33,7 @@
 .education-card {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(15, 23, 42, 0.76);
+  background: var(--panel);
 }
 
 .about-card {

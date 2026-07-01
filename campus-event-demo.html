@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive browser simulation of Leah Jane Gregorio's Campus Event Management System." />
+  <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
+  <title>Campus Event Management System | Interactive Demo</title>
+  <link rel="stylesheet" href="css/campus-event-demo.css" />
+</head>
+<body>
+  <header class="app-header">
+    <a class="app-brand" href="index.html" aria-label="Return to Leah Jane Gregorio's portfolio">
+      <span class="brand-mark">NU</span>
+      <span>
+        <strong>NU Campus Events</strong>
+        <small>Event Management System</small>
+      </span>
+    </a>
+    <div class="header-actions">
+      <button class="ghost-button" id="reset-demo" type="button">Reset Demo</button>
+      <a class="portfolio-link" href="projects.html#campus-event">Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="demo-notice" aria-label="Simulation notice">
+      <strong>Interactive portfolio simulation</strong>
+      <span>Changes stay in this browser only. No account, server, or database is connected.</span>
+    </aside>
+
+    <section class="welcome-row">
+      <div>
+        <p class="section-label">Dashboard overview</p>
+        <h1>Good day, Event Coordinator</h1>
+        <p>Plan, organize, and monitor campus activities in one place.</p>
+      </div>
+      <time id="current-date"></time>
+    </section>
+
+    <section class="stats-grid" aria-label="Event statistics">
+      <article>
+        <span class="stat-icon blue" aria-hidden="true">▦</span>
+        <div><strong id="total-events">0</strong><span>Total events</span><small>All records</small></div>
+      </article>
+      <article>
+        <span class="stat-icon green" aria-hidden="true">＋</span>
+        <div><strong id="month-events">0</strong><span>This month</span><small id="month-label"></small></div>
+      </article>
+      <article>
+        <span class="stat-icon amber" aria-hidden="true">◷</span>
+        <div><strong id="upcoming-events">0</strong><span>Upcoming</span><small>Scheduled</small></div>
+      </article>
+      <article>
+        <span class="stat-icon violet" aria-hidden="true">♙</span>
+        <div><strong id="organizer-count">0</strong><span>Organizers</span><small>Active groups</small></div>
+      </article>
+    </section>
+
+    <div class="dashboard-grid">
+      <section class="panel event-form-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label" id="form-mode-label">Create record</p>
+            <h2 id="form-title">Add New Event</h2>
+          </div>
+          <button class="text-button" id="cancel-edit" type="button" hidden>Cancel edit</button>
+        </div>
+        <form id="event-form" novalidate>
+          <input id="event-id" type="hidden" />
+          <label>
+            <span>Event name</span>
+            <input id="event-name" type="text" maxlength="50" placeholder="e.g. Leadership Seminar" required />
+            <small class="field-error"></small>
+          </label>
+          <label>
+            <span>Event type</span>
+            <select id="event-type" required>
+              <option value="">Select type...</option>
+              <option>Academic</option>
+              <option>Arts & Culture</option>
+              <option>Career</option>
+              <option>Community</option>
+              <option>Sports</option>
+              <option>Student Life</option>
+            </select>
+            <small class="field-error"></small>
+          </label>
+          <label>
+            <span>Venue</span>
+            <input id="event-venue" type="text" maxlength="50" placeholder="e.g. University Auditorium" required />
+            <small class="field-error"></small>
+          </label>
+          <label>
+            <span>Event date</span>
+            <input id="event-date" type="date" required />
+            <small class="field-error"></small>
+          </label>
+          <label>
+            <span>Organizer</span>
+            <input id="event-organizer" type="text" maxlength="50" placeholder="e.g. Student Council" required />
+            <small class="field-error"></small>
+          </label>
+          <button class="primary-button" id="submit-event" type="submit">Add Event</button>
+        </form>
+      </section>
+
+      <section class="panel calendar-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">Schedule</p>
+            <h2 id="calendar-title">Calendar</h2>
+          </div>
+        </div>
+        <div class="calendar-weekdays" aria-hidden="true">
+          <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+        </div>
+        <div class="calendar-grid" id="calendar-grid"></div>
+        <div class="next-event">
+          <p class="section-label">Next event</p>
+          <div id="next-event-card"></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="panel records-panel" id="event-records">
+      <div class="records-heading">
+        <div>
+          <p class="section-label">Event directory</p>
+          <h2>Events List</h2>
+          <span id="result-count"></span>
+        </div>
+        <form class="filters" id="filter-form" role="search">
+          <label class="sr-only" for="event-search">Search events</label>
+          <input id="event-search" type="search" placeholder="Search events, venues, organizers..." />
+          <label class="sr-only" for="type-filter">Filter by event type</label>
+          <select id="type-filter">
+            <option value="">All event types</option>
+            <option>Academic</option>
+            <option>Arts & Culture</option>
+            <option>Career</option>
+            <option>Community</option>
+            <option>Sports</option>
+            <option>Student Life</option>
+          </select>
+          <button class="secondary-button" type="submit">Search</button>
+          <button class="text-button" id="clear-filters" type="button">Clear</button>
+        </form>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Type</th>
+              <th>Venue</th>
+              <th>Date</th>
+              <th>Organizer</th>
+              <th><span class="sr-only">Actions</span></th>
+            </tr>
+          </thead>
+          <tbody id="events-table"></tbody>
+        </table>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <strong>No events found</strong>
+        <span>Try a different search or add a new event.</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <div class="modal-backdrop" id="delete-modal" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title">
+      <p class="section-label">Confirm action</p>
+      <h2 id="delete-title">Delete this event?</h2>
+      <p>The record will be removed from this browser simulation.</p>
+      <div>
+        <button class="ghost-button" id="cancel-delete" type="button">Cancel</button>
+        <button class="danger-button" id="confirm-delete" type="button">Delete Event</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/campus-event-demo.js"></script>
+</body>
+</html>

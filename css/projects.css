@@ -40,6 +40,48 @@
   margin-bottom: 22px;
 }
 
+.lilycrest-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  overflow: hidden;
+  margin-bottom: 22px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  scroll-margin-top: 96px;
+}
+
+.lilycrest-media {
+  min-height: 410px;
+  background: var(--bg);
+}
+
+.lilycrest-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lilycrest-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 34px;
+}
+
+.lilycrest-content h2 {
+  color: var(--text);
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  line-height: 1.2;
+}
+
+.lilycrest-content > p:not(.project-rank) {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 .flagship-project {
   display: grid;
   grid-template-columns: 1fr;
@@ -49,7 +91,7 @@
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(15, 23, 42, 0.76);
+  background: var(--panel);
 }
 
 .case-study-panel {
@@ -102,11 +144,11 @@
 }
 
 .project-tags span {
-  border: 1px solid rgba(45, 212, 191, 0.36);
+  border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 4px;
   padding: 4px 10px;
-  background: rgba(45, 212, 191, 0.08);
-  color: #bffcf3;
+  background: rgba(59, 130, 246, 0.08);
+  color: #bfdbfe;
   font-size: 0.78rem;
   font-weight: 500;
 }
@@ -131,7 +173,7 @@
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(15, 23, 42, 0.76);
+  background: var(--panel);
 }
 
 .project-card.case-study-card {
@@ -144,7 +186,7 @@
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  background: #0f172a;
+  background: var(--bg);
 }
 
 .project-card-content {
@@ -198,14 +240,32 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.case-study-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.case-study-actions span {
+  color: var(--subtle);
+  font-size: 0.8rem;
+}
+
 .mini-case {
   margin-top: 4px;
 }
 
 @media (max-width: 1050px) {
+  .lilycrest-project,
   .flagship-project,
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .lilycrest-media {
+    min-height: 320px;
   }
 
   .project-card {
@@ -241,5 +301,13 @@
 
   .project-card .btn {
     width: 100%;
+  }
+
+  .lilycrest-media {
+    min-height: 220px;
+  }
+
+  .lilycrest-content {
+    padding: 24px;
   }
 }

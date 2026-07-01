@@ -284,13 +284,13 @@ input[readonly] {
 .back-link {
   display: inline-block;
   margin-top: 10px;
-  color: #3498db;
+  color: #3b82f6;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .back-link:hover {
-  color: #1e90ff;
+  color: #60a5fa;
   text-decoration: underline;
 }
