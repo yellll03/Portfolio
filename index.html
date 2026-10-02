@@ -1,207 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Leah Jane Gregorio, an aspiring IT Business Analyst focused on systems, data, QA documentation, and academic project analysis." />
-  <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>Leah Jane Gregorio | Analyst Portfolio</title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/index.css" />
-</head>
-<body id="top">
-  <header class="navbar">
-    <a class="logo" href="index.html" aria-label="Leah Jane Gregorio home">
-      <span class="logo-mark">LG</span>
-      <span>Leah Jane Gregorio</span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Leah Jane Gregorio is a BSIT student specializing in Mobile and Web Application, with project experience in mobile development, software QA, and system analysis.">
+    <meta name="theme-color" content="#f8f7f4">
+    <title>
+      BSIT Student & IT Intern Candidate | Leah Jane Gregorio
+    </title>
+    <link rel="icon" href="photos/lg-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/portfolio.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">
+      Skip to content
     </a>
-    <nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Leah Jane Gregorio — home">
+          <span class="monogram" aria-hidden="true">LG</span>
+          <span class="brand-name">
+            Leah Jane Gregorio
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+          Menu
+        </button>
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="index.html" aria-current="page">
+            Home
+          </a>
+          <a href="projects.html">
+            Projects
+          </a>
+          <a href="about.html">
+            About
+          </a>
+          <a href="contacts.html">
+            Contact
+          </a>
+          <a class="resume-link" href="assets/Leah_Gregorio_CV.pdf" target="_blank" rel="noopener">
+            Resume
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Aspiring IT Business Analyst | BSIT Student | Systems, Data & QA Documentation</p>
-        <h1>Turning academic systems and research projects into clear analysis, documentation, and testing outputs.</h1>
-        <p>
-          I am a 4th-year BSIT student interested in entry-level IT Business Analyst, Business Analyst,
-          Systems Analyst, QA Analyst, and Data Analyst roles. My portfolio focuses on academic projects where I practiced
-          requirements gathering, process understanding, database documentation, manual review, and clear project outputs.
-        </p>
-        <div class="hero-actions" aria-label="Primary actions">
-          <a href="projects.html" class="btn primary">View Projects</a>
-          <a href="contacts.html" class="btn secondary">Contact Me</a>
-          <a href="https://www.linkedin.com/in/leigh-largueza-8aa41819b" class="text-link" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+          </a>
+        </nav>
       </div>
-      <div class="hero-card" aria-label="Portfolio highlights">
-        <div class="hero-stats">
-          <span><strong>Analysis</strong> Requirements, workflows, problem statements</span>
-          <span><strong>Documentation</strong> Manuals, revisions, database notes</span>
-          <span><strong>QA and data</strong> Test observations, research summaries, reports</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="selected-projects" aria-labelledby="selected-projects-title">
-      <div class="section-heading projects-heading">
+    </header>
+    <main id="main" class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
         <div>
-          <p class="eyebrow">Selected projects</p>
-          <h2 id="selected-projects-title">Systems designed around real user workflows.</h2>
-          <p>
-            A selection of academic and concept projects covering property management,
-            transaction processing, booking, and responsive web experiences.
+          <h1 id="hero-title">Leah Jane Gregorio</h1>
+          <p class="hero-degree">BSIT — Mobile &amp; Web Application</p>
+          <p class="intro">
+            I work on mobile applications, software testing, and system workflows. I’m currently seeking an IT internship where I can apply what I’ve learned through academic and capstone projects.
           </p>
+          <div class="actions">
+            <a class="button primary" href="#projects">
+              View Projects
+
+            </a>
+            <a class="button secondary" href="assets/Leah_Gregorio_CV.pdf" target="_blank" rel="noopener">
+              Resume
+            </a>
+            <a class="text-link" href="https://github.com/yellll03" target="_blank" rel="noopener">
+              GitHub
+            </a>
+            <a class="text-link" href="contacts.html">Contact</a>
+          </div>
         </div>
-        <a href="projects.html" class="text-link">View all projects <span aria-hidden="true">&rarr;</span></a>
-      </div>
+        <figure class="hero-portrait">
+          <img src="photos/leah-gregorio-portrait.jpeg" alt="Leah Jane Gregorio" fetchpriority="high" width="958" height="979">
+          <figcaption>National University – Mall of Asia <span>Makati City, Philippines</span></figcaption>
+        </figure>
+      </section>
 
-      <article class="project-lead">
-        <div class="project-lead-media">
-          <img src="photos/lilycrest-feature.png" alt="LilyCrest property management dashboard shown on desktop and mobile devices" />
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+
+            <h2 id="projects-title">
+              Selected projects
+            </h2>
+          </div>
+          <a class="text-link" href="projects.html">
+            Explore all projects
+          </a>
         </div>
-        <div class="project-lead-content">
-          <p class="eyebrow">Featured concept</p>
-          <h3>LilyCrest Property Management</h3>
-          <p>
-            A responsive property-management experience that brings tenant records,
-            billing, maintenance requests, reservations, and reporting into one clear system.
-          </p>
-          <div class="project-tags" aria-label="LilyCrest project skills">
-            <span>UI/UX</span>
-            <span>Responsive design</span>
-            <span>System workflow</span>
-          </div>
-          <a href="projects.html#lilycrest" class="btn primary">Explore Project</a>
-        </div>
-      </article>
-
-      <div class="home-project-grid">
-        <article class="home-project-card">
-          <img src="photos/ALC.png" alt="ALC Bank System interface" />
-          <div>
-            <p class="project-type">Banking system</p>
-            <h3>ALC Bank System</h3>
-            <p>Login validation, deposits, withdrawals, balance checks, and receipt generation.</p>
-            <a href="project1.html" class="text-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-
-        <article class="home-project-card">
-          <img src="photos/Luxeship.png" alt="LuxeShip booking system interface" />
-          <div>
-            <p class="project-type">Booking system</p>
-            <h3>LuxeShip Booking System</h3>
-            <p>Passenger details, class selection, validation, booking summaries, and QR receipts.</p>
-            <a href="project2.html" class="text-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-
-        <article class="home-project-card">
-          <img src="photos/Claudia.png" alt="Claudia focus website interface" />
-          <div>
-            <p class="project-type">Responsive website</p>
-            <h3>Claudia Focus Website</h3>
-            <p>A focus timer, task list, ambient sounds, animated visuals, and dark mode.</p>
-            <a href="project3.html" class="text-link">View project <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-
-        <article class="home-project-card">
-          <img src="photos/POS1.png" alt="POS1 point-of-sale system interface" />
-          <div>
-            <p class="project-type">Desktop application</p>
-            <h3>POS1 Point-of-Sale System</h3>
-            <p>Inventory updates, transaction processing, login validation, and receipt generation.</p>
-            <a href="https://drive.google.com/file/d/1kh17DnFqhTPBQmz62DB8F_he24W0FMNP/view?usp=sharing" class="text-link" target="_blank" rel="noopener">View demo <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="featured-project">
-      <div class="section-heading">
-        <p class="eyebrow">Featured case study</p>
-        <h2>Campus Event Management System</h2>
-        <p>
-          A system analysis and database documentation project focused on organizing campus event information,
-          participants, schedules, approvals, and event-related records.
-        </p>
-      </div>
-      <div class="featured-grid">
-        <div class="featured-media">
-          <div class="documentation-preview" aria-label="Campus Event Management System documentation preview">
-            <h3>Campus Event Management System</h3>
+        <article class="lead-project">
+          <a class="mobile-project-link" href="liliora.html" aria-label="Explore my LILIORA mobile development work"><div class="mobile-showcase">
+  <div class="mobile-showcase-copy"><p class="eyebrow">Mobile application · Android &amp; iOS</p><span class="showcase-title">LILIORA</span><p>Multi-Branch Dormitory Management System</p><p>Mobile Developer · System Analyst · QA Tester</p><span class="capture-label">Tenant sign-in & announcements · iOS</span></div>
+  <div class="mobile-phones"><img src="photos/liliora-ios-login.jpeg" alt="Actual iOS tenant sign-in screen" width="219" height="475"><img src="photos/liliora-ios-filters.jpeg" alt="Actual iOS announcement category and priority filters" width="219" height="475"></div>
+</div></a>
+          <div class="lead-body">
             <div>
-              <span>Users</span>
-              <p>Students, organizers, administrators</p>
+              <p class="eyebrow">
+                Capstone · 2025 — Present
+              </p>
+              <h3>
+                LILIORA
+              </h3>
+              <p class="subtitle">
+                Multi-Branch Dormitory Management System
+              </p>
+              <p class="role">
+                Mobile Developer · System Analyst · QA Tester
+              </p>
             </div>
             <div>
-              <span>Records</span>
-              <p>Events, schedules, participants, approvals</p>
+              <p>
+                My main development work on this team capstone is the React Native mobile app for Android and iOS: tenant workflows, platform-specific behavior, and API integration, supported by system analysis and QA.
+              </p>
+              <div class="tags">
+                <span>
+                  React Native (Expo)
+                </span>
+                <span>
+                  React
+                </span>
+                <span>
+                  Node.js
+                </span>
+                <span>
+                  MongoDB
+                </span>
+                <span>
+                  Firebase
+                </span>
+              </div>
+              <a class="text-link" href="liliora.html">
+                Read the case study
+              </a>
             </div>
+          </div>
+        </article>
+        <div class="project-list">
+          <a class="project-row" href="clinic.html">
+
             <div>
-              <span>Outputs</span>
-              <p>System overview, workflow notes, database planning</p>
+              <h3>
+                General Clinic Management System
+              </h3>
+              <p class="project-type">
+                Academic project · Developer &amp; QA Tester
+              </p>
             </div>
+            <p>
+              From booking to consultation, prescriptions, and follow-up—with distinct permissions for four roles.
+            </p>
+
+          </a>
+          <a class="project-row" href="skinfluence.html">
+
+            <div>
+              <h3>
+                SkinFluence
+              </h3>
+              <p class="project-type">
+                Native Android · Android Developer
+              </p>
+            </div>
+            <p>
+              Native account screens and category browsing, connected through Java activities and structured navigation.
+            </p>
+
+          </a>
+          <a class="project-row" href="pos.html">
+
+            <div>
+              <h3>
+                Point of Sale System
+              </h3>
+              <p class="project-type">
+                First-year academic project · Developer &amp; Software Tester
+              </p>
+            </div>
+            <p>
+              A Java desktop prototype: item catalogue, cart calculations, checkout, receipts, and sale records.
+            </p>
+
+          </a>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+
+            <h2 id="work-title">
+              How I work
+            </h2>
           </div>
         </div>
-        <div class="feature-panel">
-          <h3>Analyst focus</h3>
+        <div class="work-grid">
+          <article>
+
+            <h3>
+              Mobile &amp; web applications
+            </h3>
+            <p>
+              In LILIORA, extending a stay means reviewing terms, confirming a request, and tracking approval separately from the date it takes effect.
+            </p>
+          </article>
+          <article>
+
+            <h3>
+              Testing &amp; issue verification
+            </h3>
+            <p>
+              I test everyday workflows and edge cases, from repeated taps and interrupted requests to role-specific clinic tasks.
+            </p>
+          </article>
+          <article>
+
+            <h3>
+              Requirements &amp; workflows
+            </h3>
+            <p>
+              The clinic connects appointments, consultation records, prescriptions, and stock movement. Each step depends on both the user’s role and the record’s state.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div>
+
+            <h2 id="skills-title">
+              Skills &amp; tools
+            </h2>
+          </div>
           <p>
-            This project shows how I approach a system from an analyst perspective: identifying users,
-            defining the purpose of the system, outlining records needed, and organizing documentation that can guide development.
+            Working knowledge developed through academic projects and hands-on practice.
           </p>
-          <div class="feature-list">
-            <span>System analysis</span>
-            <span>Database planning</span>
-            <span>Workflow notes</span>
-            <span>Documentation</span>
-            <span>Academic project</span>
+        </div>
+        <div class="skill-grid">
+          <div>
+            <h3>
+              Development
+            </h3>
+            <p>
+              JavaScript, React Native (Expo), React, Vite, Node.js, HTML, CSS
+            </p>
           </div>
-          <div class="feature-actions">
-            <a href="campus-event-demo.html" class="btn primary">Launch Simulation</a>
-            <a href="projects.html#campus-event" class="text-link">Read Case Study</a>
+          <div>
+            <h3>
+              Testing &amp; QA
+            </h3>
+            <p>
+              Manual, functional, regression and UI testing; test case execution; bug reporting; requirement and workflow validation
+            </p>
+          </div>
+          <div>
+            <h3>
+              Databases
+            </h3>
+            <p>
+              MongoDB, Firebase, MySQL, SQL
+            </p>
+          </div>
+          <div>
+            <h3>
+              Tools &amp; version control
+            </h3>
+            <p>
+              Git, GitHub, Visual Studio Code, MySQL Workbench
+            </p>
+          </div>
+          <div>
+            <h3>
+              Concepts
+            </h3>
+            <p>
+              SDLC, Agile, system and requirements analysis, application logic, workflow analysis, documentation
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="exposure">
+          <strong>
+            Additional exposure
+          </strong>
+          Python, Java, Flask, Flutter
+          <p>
+            Java was used in my Android and POS academic projects. I’m continuing to build familiarity with these technologies.
+          </p>
+        </div>
+      </section>
+      <section class="section split" aria-labelledby="education-title">
+        <div>
 
-    <section class="skills-snapshot">
-      <div class="section-heading">
-        <p class="eyebrow">Core skills</p>
-        <h2>Skills I am building for analyst and QA roles</h2>
-      </div>
-      <div class="skill-grid">
-        <article>
-          <h3>Business and systems analysis</h3>
-          <p>Problem statements, user needs, process flow understanding, requirements notes, and system purpose documentation.</p>
-        </article>
-        <article>
-          <h3>Data and database documentation</h3>
-          <p>Basic SQL concepts, CRUD understanding, entity and field planning, research summaries, and organized data outputs.</p>
-        </article>
-        <article>
-          <h3>QA and product documentation</h3>
-          <p>Manual review, revision tracking, feature documentation, test observations, and clear communication of issues.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+          <h2 id="education-title">
+            Education
+          </h2>
+        </div>
+        <div class="education">
+          <div>
+            <h3>
+              National University – Mall of Asia
+            </h3>
+            <p>
+              BSIT · Mobile and Web Application
+            </p>
+            <p>
+              Dean’s Lister · Expected graduation: 2027
+            </p>
+          </div>
+          <span class="date">
+            2023 — Present
+          </span>
+        </div>
+      </section>
+      <section class="contact-band" aria-labelledby="contact-title">
+        <div>
 
-  <footer class="footer">
-    <p>&copy; 2026 Leah Jane Gregorio. Analyst portfolio.</p>
-    <p><a href="#top" class="back-to-top">Back to Top</a></p>
-  </footer>
+          <h2 id="contact-title">
+            Internship opportunities
+          </h2>
+          <p>
+            Interested in software QA, mobile and web development, and system analysis.
+          </p>
+        </div>
+        <a class="button primary" href="contacts.html">
+          Get in touch
 
-  <script src="js/script.js"></script>
-</body>
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>
+          © 2026 Leah Jane L. Gregorio · Makati City, Philippines
+        </span>
+        <div class="footer-links">
+          <a href="https://github.com/yellll03" target="_blank" rel="noopener">
+            GitHub
+          </a>
+          <a href="mailto:leighlargueza@gmail.com">
+            Email
+          </a>
+          <a href="#top">
+            Back to top
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

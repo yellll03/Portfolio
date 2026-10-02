@@ -1,269 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Analyst-focused academic project case studies by Leah Jane Gregorio, covering systems analysis, business research, database documentation, QA, and product documentation." />
-  <link rel="icon" href="photos/favicon.ico" type="image/x-icon" />
-  <title>Projects | Leah Jane Gregorio</title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/projects.css" />
-</head>
-<body id="top">
-  <header class="navbar">
-    <a class="logo" href="index.html" aria-label="Leah Jane Gregorio home">
-      <span class="logo-mark">LG</span>
-      <span>Leah Jane Gregorio</span>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mobile, web, and desktop projects by Leah Jane Gregorio, with a focus on development, testing, and user workflows.">
+    <meta name="theme-color" content="#f8f7f4">
+    <title>
+      Project case studies | Leah Jane Gregorio
+    </title>
+    <link rel="icon" href="photos/lg-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/case-studies.css">
+    <script src="js/portfolio.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">
+      Skip to content
     </a>
-    <nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Leah Jane Gregorio — home">
+          <span class="monogram" aria-hidden="true">LG</span>
+          <span class="brand-name">
+            Leah Jane Gregorio
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+          Menu
+        </button>
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="projects.html" aria-current="page">
+            Projects
+          </a>
+          <a href="about.html">
+            About
+          </a>
+          <a href="contacts.html">
+            Contact
+          </a>
+          <a class="resume-link" href="assets/Leah_Gregorio_CV.pdf" target="_blank" rel="noopener">
+            Resume
 
-  <main class="projects-page">
-    <section class="projects-hero">
-      <p class="eyebrow">Academic project case studies</p>
-      <h1>Systems and websites built through analysis, development, documentation, and testing.</h1>
-      <p>
-        These academic projects demonstrate practical experience with system workflows, user interfaces,
-        validation, transaction logic, documentation, and QA review.
-      </p>
-    </section>
-
-    <section class="portfolio-projects" aria-labelledby="developed-projects">
-      <div class="portfolio-heading">
-        <p class="eyebrow">Developed projects</p>
-        <h2 id="developed-projects">Featured systems and web applications</h2>
+          </a>
+        </nav>
       </div>
-
-      <article class="lilycrest-project" id="lilycrest">
-        <div class="lilycrest-media">
-          <img src="photos/lilycrest-feature.png" alt="LilyCrest property management dashboard shown on desktop and mobile devices" />
+    </header>
+    <main id="main" class="wrap">
+      <header class="page-heading">
+        <p class="eyebrow">
+          Project case studies
+        </p>
+        <h1>
+          My projects
+        </h1>
+        <p>
+          Explore how these systems work, the decisions and rules behind their workflows, and the parts I contributed to as a student developer and tester.
+        </p>
+      </header>
+      <article class="lead-project" id="liliora">
+        <span id="lilycrest">
+        </span>
+        <a class="mobile-project-link" href="liliora.html" aria-label="Explore my LILIORA mobile development work"><div class="mobile-showcase">
+  <div class="mobile-showcase-copy"><p class="eyebrow">Mobile application · Android &amp; iOS</p><span class="showcase-title">LILIORA</span><p>Multi-Branch Dormitory Management System</p><p>Mobile Developer · System Analyst · QA Tester</p><span class="capture-label">Tenant sign-in & announcements · iOS</span></div>
+  <div class="mobile-phones"><img src="photos/liliora-ios-login.jpeg" alt="Actual iOS tenant sign-in screen" width="219" height="475"><img src="photos/liliora-ios-filters.jpeg" alt="Actual iOS announcement category and priority filters" width="219" height="475"></div>
+</div></a>
+        <div class="lead-body">
+          <div>
+            <p class="eyebrow">
+              Featured capstone · 2025 — Present
+            </p>
+            <h2>
+              LILIORA
+            </h2>
+            <p class="subtitle">
+              Multi-Branch Dormitory Management System
+            </p>
+            <p class="role">
+              Mobile Developer · System Analyst · QA Tester
+            </p>
+          </div>
+          <div>
+            <p>
+              A team system connecting two dormitory branches. My strongest development contribution is the tenant mobile app across Android and iOS, with additional work in system analysis, QA, and selected web functionality.
+            </p>
+            <a class="button primary" href="liliora.html">
+              Read the case study
+            </a>
+          </div>
         </div>
-        <div class="lilycrest-content">
-          <p class="project-rank">Featured property-management concept</p>
-          <h2>LilyCrest Property Management</h2>
-          <p>
-            A responsive system concept that gives administrators a clear view of tenants,
-            collections, maintenance requests, and reservations while giving residents quick
-            access to billing, services, notifications, and announcements.
+      </article>
+      <article class="project-preview" id="clinic">
+        <div>
+          <p class="eyebrow">
+            Academic project
           </p>
-          <div class="project-tags" aria-label="LilyCrest project skills">
-            <span>UI/UX</span><span>Responsive design</span><span>Dashboard</span><span>System workflow</span>
-          </div>
+          <h2>
+            General Clinic Management System
+          </h2>
+          <p class="role">
+            Developer · QA Tester
+          </p>
+        </div>
+        <div>
+          <p>
+            Booking, consultation, and follow-up care across four roles.
+          </p>
+          <p>
+            See how a prescription connects to inventory and how role checks separate operational work from clinical records.
+          </p>
+          <a class="text-link" href="clinic.html">
+            Read the case study
+          </a>
         </div>
       </article>
-
-      <div class="project-grid showcase-grid">
-        <article class="project-card">
-          <img src="photos/ALC.png" alt="ALC Bank System interface" />
-          <div class="project-card-content">
-            <p class="project-rank">Banking system</p>
-            <h2>ALC Bank System</h2>
-            <p>A browser-based banking simulation with login validation, deposits, withdrawals, balance checks, and receipt generation.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <a href="project1.html" class="btn primary">View Project</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="photos/Luxeship.png" alt="LuxeShip booking system interface" />
-          <div class="project-card-content">
-            <p class="project-rank">Booking system</p>
-            <h2>LuxeShip Booking System</h2>
-            <p>A responsive ship-booking workflow with passenger details, class selection, real-time validation, booking summary, and QR receipt.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <a href="project2.html" class="btn primary">View Project</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="photos/Claudia.png" alt="Claudia focus website interface" />
-          <div class="project-card-content">
-            <p class="project-rank">Responsive website</p>
-            <h2>Claudia Focus Website</h2>
-            <p>A responsive focus and wellness website featuring a timer, task list, ambient sounds, animated visuals, and dark-mode styling.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-            <a href="project3.html" class="btn primary">View Project</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="photos/POS1.png" alt="POS1 point-of-sale system interface" />
-          <div class="project-card-content">
-            <p class="project-rank">Point-of-sale system</p>
-            <h2>POS1: Point-of-Sale System</h2>
-            <p>A Java desktop application with login validation, inventory updates, transaction processing, and receipt generation.</p>
-            <div class="project-tags">
-              <span>Java</span><span>NetBeans</span>
-            </div>
-            <a href="https://drive.google.com/file/d/1kh17DnFqhTPBQmz62DB8F_he24W0FMNP/view?usp=sharing" class="btn primary" target="_blank" rel="noopener">View Demo</a>
-          </div>
-        </article>
+      <article class="project-preview" id="skinfluence">
+        <div>
+          <p class="eyebrow">
+            Academic project
+          </p>
+          <h2>
+            SkinFluence
+          </h2>
+          <p class="role">
+            Android Developer
+          </p>
+        </div>
+        <div>
+          <p>
+            Native Android account screens and skincare product browsing.
+          </p>
+          <p>
+            Explore the account screens, skincare categories, and navigation I worked with.
+          </p>
+          <a class="text-link" href="skinfluence.html">
+            Read the case study
+          </a>
+        </div>
+      </article>
+      <article class="project-preview" id="pos">
+        <div>
+          <p class="eyebrow">
+            Academic project
+          </p>
+          <h2>
+            Point of Sale System
+          </h2>
+          <p class="role">
+            Developer · Software Tester
+          </p>
+        </div>
+        <div>
+          <p>
+            An early Java desktop project connecting inventory and checkout.
+          </p>
+          <p>
+            Trace cart input, payment calculations, receipts, and sale records in the supplied academic prototype.
+          </p>
+          <a class="text-link" href="pos.html">
+            Read the case study
+          </a>
+        </div>
+      </article>
+      <section class="contact-band">
+        <div>
+          <p class="eyebrow">
+            Continue the conversation
+          </p>
+          <h2>
+            Interested in the work?
+          </h2>
+          <p>
+            I’m open to IT internship and entry-level opportunities.
+          </p>
+        </div>
+        <a class="button primary" href="contacts.html">
+          Get in touch
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>
+          © 2026 Leah Jane L. Gregorio · Makati City, Philippines
+        </span>
+        <div class="footer-links">
+          <a href="https://github.com/yellll03" target="_blank" rel="noopener">
+            GitHub
+          </a>
+          <a href="mailto:leighlargueza@gmail.com">
+            Email
+          </a>
+          <a href="#top">
+            Back to top
+          </a>
+        </div>
       </div>
-    </section>
-
-    <div class="portfolio-heading analysis-heading">
-      <p class="eyebrow">Analysis and documentation</p>
-      <h2>Additional case studies</h2>
-    </div>
-
-    <section class="flagship-project" id="campus-event">
-      <div class="case-study-panel">
-        <p class="eyebrow">Featured case study</p>
-        <h2>Campus Event Management System</h2>
-        <dl class="case-study-details">
-          <div>
-            <dt>Role</dt>
-            <dd>Student systems analyst and documentation contributor</dd>
-          </div>
-          <div>
-            <dt>Tools Used</dt>
-            <dd>Documentation tools, database planning notes, diagrams, SQL concepts</dd>
-          </div>
-          <div>
-            <dt>Problem/Purpose</dt>
-            <dd>Campus events need organized records for event details, schedules, participants, approvals, and updates.</dd>
-          </div>
-          <div>
-            <dt>What I Did</dt>
-            <dd>Outlined the system purpose, identified key users, listed important records, mapped basic event workflows, and prepared documentation to support system development.</dd>
-          </div>
-          <div>
-            <dt>Outputs</dt>
-            <dd>System overview, database-related notes, feature list, workflow notes, and documentation for event management records.</dd>
-          </div>
-          <div>
-            <dt>Skills Demonstrated</dt>
-            <dd>Systems analysis, database documentation, requirements thinking, process understanding, and clear written communication.</dd>
-          </div>
-        </dl>
-        <div class="case-study-actions">
-          <a href="campus-event-demo.html" class="btn primary">Launch Interactive Simulation</a>
-          <span>Browser-only demo with safe sample data</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-grid" aria-label="Project case study cards">
-      <article class="project-card case-study-card">
-        <div class="project-card-content">
-          <p class="project-rank">Business and data analysis</p>
-          <h2>Small Business Challenges Research</h2>
-          <dl class="mini-case">
-            <div>
-              <dt>Role</dt>
-              <dd>Student business/data analysis contributor</dd>
-            </div>
-            <div>
-              <dt>Tools Used</dt>
-              <dd>Research notes, spreadsheet-style organization, summary documentation</dd>
-            </div>
-            <div>
-              <dt>Problem/Purpose</dt>
-              <dd>Small businesses face challenges such as limited resources, customer reach, operational issues, and technology adoption.</dd>
-            </div>
-            <div>
-              <dt>What I Did</dt>
-              <dd>Reviewed gathered information, organized findings by theme, identified repeated issues, and summarized possible improvement areas.</dd>
-            </div>
-            <div>
-              <dt>Outputs</dt>
-              <dd>Research summary, categorized business challenges, observations, and practical recommendations.</dd>
-            </div>
-            <div>
-              <dt>Skills Demonstrated</dt>
-              <dd>Business analysis, data organization, research interpretation, summary writing, and problem identification.</dd>
-            </div>
-          </dl>
-        </div>
-      </article>
-
-      <article class="project-card case-study-card">
-        <div class="project-card-content">
-          <p class="project-rank">CRUD and database documentation</p>
-          <h2>Music Playlist Management System</h2>
-          <dl class="mini-case">
-            <div>
-              <dt>Role</dt>
-              <dd>Student systems/database documentation contributor</dd>
-            </div>
-            <div>
-              <dt>Tools Used</dt>
-              <dd>Database concepts, CRUD notes, documentation tools</dd>
-            </div>
-            <div>
-              <dt>Problem/Purpose</dt>
-              <dd>A playlist system needs a clear way to add, view, update, and delete songs while keeping song records organized.</dd>
-            </div>
-            <div>
-              <dt>What I Did</dt>
-              <dd>Documented the basic CRUD flow, identified important data fields, described user actions, and organized the system logic in a readable format.</dd>
-            </div>
-            <div>
-              <dt>Outputs</dt>
-              <dd>CRUD documentation, data field list, feature notes, and simple system behavior description.</dd>
-            </div>
-            <div>
-              <dt>Skills Demonstrated</dt>
-              <dd>Database documentation, systems thinking, data organization, CRUD understanding, and clear technical writing.</dd>
-            </div>
-          </dl>
-        </div>
-      </article>
-
-      <article class="project-card case-study-card">
-        <div class="project-card-content">
-          <p class="project-rank">QA and product documentation</p>
-          <h2>Mobile App Manual/Revision Documentation</h2>
-          <dl class="mini-case">
-            <div>
-              <dt>Role</dt>
-              <dd>Student QA/product documentation contributor</dd>
-            </div>
-            <div>
-              <dt>Tools Used</dt>
-              <dd>Mobile app review, manual documentation, revision notes</dd>
-            </div>
-            <div>
-              <dt>Problem/Purpose</dt>
-              <dd>A mobile application needs clear user guidance and revision documentation so features, changes, and instructions are easier to understand.</dd>
-            </div>
-            <div>
-              <dt>What I Did</dt>
-              <dd>Reviewed app screens and features, wrote user-facing documentation, recorded revisions, and described changes in a structured way.</dd>
-            </div>
-            <div>
-              <dt>Outputs</dt>
-              <dd>User manual content, revision documentation, feature descriptions, and QA-style observations.</dd>
-            </div>
-            <div>
-              <dt>Skills Demonstrated</dt>
-              <dd>QA review, product documentation, attention to detail, user guidance writing, and revision tracking.</dd>
-            </div>
-          </dl>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2026 Leah Jane Gregorio. Analyst portfolio.</p>
-    <p><a href="#top" class="back-to-top">Back to Top</a></p>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
+    </footer>
+  </body>
 </html>

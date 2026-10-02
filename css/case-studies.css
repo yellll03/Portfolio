@@ -1,0 +1,66 @@
+.case-intro { padding: 55px 0 38px; max-width: 890px; }
+.case-intro .back-link { display: inline-block; margin-bottom: 34px; }
+.case-intro h1 { margin-bottom: 24px; }
+.case-intro .dek { font-size: 21px; max-width: 800px; }
+.case-facts { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; padding: 24px 0; margin: 0 0 32px; border-block: 1px solid var(--line); }
+.case-facts dt { font-size: 11px; letter-spacing: .02em; color: var(--muted); margin-bottom: 7px; }
+.case-facts dd { margin: 0; font-size: 14px; }
+.case-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 65px; margin-top: 48px; }
+.case-toc { position: sticky; top: 92px; align-self: start; }
+.case-toc a { display: block; padding: 9px 0; font-size: 13px; text-decoration: none; color: var(--muted); }
+.case-toc a:hover { color: var(--green); text-decoration: underline; }
+.chapter { padding-bottom: 42px; margin-bottom: 42px; scroll-margin-top: 8px; }
+.chapter h2 { font-size: 32px; margin-bottom: 23px; }
+.chapter h3 { font-size: 19px; margin: 26px 0 10px; }
+.chapter p, .chapter li { font-size: 15px; }
+.chapter ul { color: var(--muted); }
+.workflow { list-style: none; padding: 0; counter-reset: step; margin: 26px 0; }
+.workflow li { counter-increment: step; display: grid; grid-template-columns: 36px 1fr; gap: 15px; padding: 17px 0; border-top: 1px solid var(--line); margin: 0; }
+.workflow li::before { content: counter(step, decimal-leading-zero); color: var(--green); font-size: 12px; padding-top: 3px; }
+.workflow strong { display: block; color: var(--ink); font-weight: 600; margin-bottom: 4px; }
+.module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 30px; }
+.module-grid h3 { margin-top: 18px; }
+.technical-map { margin: 20px 0; }
+.technical-map div { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 15px 0; border-top: 1px solid var(--line); }
+.technical-map dt { font-size: 13px; font-weight: 600; }
+.technical-map dd { margin: 0; color: var(--muted); font-size: 14px; }
+.phone-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0; }
+.phone-gallery figure { padding: 16px; background: #e9eae5; }
+.phone-gallery img { max-height: 560px; width: auto; margin: auto; }
+.phone-gallery figcaption, .asset-figure figcaption { font-size: 11px; color: var(--muted); margin-top: 14px; line-height: 1.6; }
+.asset-figure { background: #ede7df; padding: 24px; margin: 24px 0; }
+.asset-figure img { max-height: 550px; width: auto; margin: auto; }
+.project-preview { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 38px 0; border-bottom: 1px solid var(--line); }
+.project-preview h2 { font-size: 30px; margin-bottom: 14px; }
+.project-preview .eyebrow { margin-bottom: 13px; }
+.project-preview .text-link { margin-top: 22px; }
+.project-preview p { font-size: 14px; }
+.case-next { display: flex; justify-content: space-between; gap: 20px; padding: 10px 0 50px; }
+.mobile-workflow { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; align-items: center; padding: 30px 0; border-bottom: 1px solid var(--line); }
+.mobile-workflow figure { margin: 0; }
+.mobile-workflow img { width: 100%; height: auto; max-width: 220px; margin: auto; border: 5px solid #30342e; border-radius: 24px; }
+.mobile-workflow figcaption { font-size: 11px; color: var(--muted); line-height: 1.6; margin-top: 13px; }
+.mobile-workflow h3 { margin-top: 0; }
+.mobile-workflow p + h3 { margin-top: 24px; }
+.chapter .screen-note { font-size: 12px; }
+.platform-context { max-width: 620px; }
+.android-workflow { border: 0; padding-bottom: 0; }
+@media(min-width:641px) and (max-width:1050px) { .mobile-workflow { grid-template-columns: 170px minmax(0,1fr); gap: 24px; } }
+@media(max-width:900px) { .case-layout { grid-template-columns: 160px minmax(0, 1fr); gap: 30px; } }
+@media(max-width:640px) {
+  .mobile-workflow { grid-template-columns: 1fr; gap: 22px; }
+  .mobile-workflow figure { max-width: 220px; margin-inline: auto; }
+  .case-intro { padding-top: 35px; }
+  .case-intro h1 { font-size: 34px; }
+  .case-intro .dek { font-size: 18px; }
+  .case-facts { grid-template-columns: 1fr; gap: 17px; }
+  .case-layout { display: block; margin-top: 92px; }
+  .case-toc { position: static; display: flex; gap: 5px 20px; flex-wrap: wrap; padding-bottom: 26px; }
+  .case-toc .eyebrow { width: 100%; margin-bottom: 0; }
+  .chapter h2 { font-size: 28px; }
+  .module-grid, .project-preview { grid-template-columns: 1fr; gap: 14px; }
+  .technical-map div { grid-template-columns: 1fr; gap: 5px; }
+  .phone-gallery { gap: 12px; }
+  .phone-gallery figure { padding: 8px; }
+  .case-next { flex-wrap: wrap; }
+}

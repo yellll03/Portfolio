@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A clinic system that connects patient booking, front-desk coordination, consultations, and follow-up records while keeping each role’s access separate.">
+    <meta name="theme-color" content="#f8f7f4">
+    <title>
+      General Clinic Management System | Leah Jane Gregorio
+    </title>
+    <link rel="icon" href="photos/lg-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/case-studies.css">
+    <script src="js/portfolio.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html" aria-label="Leah Jane Gregorio — home">
+          <span class="monogram" aria-hidden="true">LG</span>
+          <span class="brand-name">
+            Leah Jane Gregorio
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
+          Menu
+        </button>
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="index.html">
+            Home
+          </a>
+          <a href="projects.html" aria-current="page">
+            Projects
+          </a>
+          <a href="about.html">
+            About
+          </a>
+          <a href="contacts.html">
+            Contact
+          </a>
+          <a class="resume-link" href="assets/Leah_Gregorio_CV.pdf" target="_blank" rel="noopener">
+            Resume
+
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <header class="case-intro">
+        <a class="text-link back-link" href="projects.html"> All projects
+        </a>
+        <p class="eyebrow">
+          Academic project
+        </p>
+        <h1>
+          General Clinic
+          <br>
+          Management System
+        </h1>
+        <p class="dek">
+          A clinic system that connects patient booking, front-desk coordination, consultations, and follow-up records while keeping each role’s access separate.
+        </p>
+      </header>
+      <dl class="case-facts">
+        <div>
+          <dt>
+            My role
+          </dt>
+          <dd>
+            Developer · QA Tester — Web & Mobile
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Project context
+          </dt>
+          <dd>
+            Team project · Four user roles
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Focus
+          </dt>
+          <dd>
+            User workflows · Development · Testing
+          </dd>
+        </div>
+      </dl>
+      <div class="case-layout">
+        <nav class="case-toc" aria-label="Case study sections">
+          <p class="eyebrow">
+            In this case study
+          </p>
+          <a href="#background">
+            Problem & solution
+          </a>
+          <a href="#workflow">
+            From booking to follow-up
+          </a>
+          <a href="#features">
+            Connected features
+          </a>
+          <a href="#contribution">
+            My contribution
+          </a>
+          <a href="#technical">
+            Tech stack
+          </a>
+          <a href="#testing">
+            QA & practical learning
+          </a>
+        </nav>
+        <div>
+          <section class="chapter" id="background">
+            <h2>
+              Problem & solution
+            </h2>
+            <p>
+              A clinic visit involves more than an appointment list: a patient selects a service, staff coordinate the schedule, a doctor records care, and follow-up work may involve prescriptions or laboratory results.
+            </p>
+            <p>
+              The project connects those stages in one system with four roles—Patient, Doctor, Staff, and Admin. Its practical design challenge is keeping scheduling and operational work connected without giving every user access to clinical editing.
+            </p>
+          </section>
+          <section class="chapter" id="workflow">
+            <h2>
+              From booking to follow-up
+            </h2>
+            <ol class="workflow">
+              <li>
+                <div>
+                  <strong>
+                    Patient books an available slot
+                  </strong>
+                  <p>
+                    The patient chooses an active service, an assigned doctor, a date, and a duration-aligned time slot, then reviews the booking. Conflict checks prevent overlapping bookings.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>
+                    Front desk coordinates the visit
+                  </strong>
+                  <p>
+                    Staff or Admin can confirm eligible appointments and manage the queue. The assigned doctor starts the consultation at or after its scheduled time.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>
+                    Doctor records the consultation
+                  </strong>
+                  <p>
+                    A saved medical record is required before the consultation can be completed. The patient can read their own records; Staff and Admin do not gain clinical editing rights.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <strong>
+                    Follow-up stays linked to the visit
+                  </strong>
+                  <p>
+                    A doctor can issue a prescription or lab order. Staff dispense matching medicine or record specimen collection. The doctor records and releases lab results before the patient can view them.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="chapter" id="features">
+            <h2>
+              Connected features
+            </h2>
+            <div class="module-grid">
+              <article>
+                <h3>
+                  Prescriptions & stock
+                </h3>
+                <p>
+                  Dispensing checks medicine name, strength, expiry, active status, and available quantity. The prescription update and stock deduction happen in the same database transaction.
+                </p>
+              </article>
+              <article>
+                <h3>
+                  Laboratory workflow
+                </h3>
+                <p>
+                  An order moves through collection, result entry, review, and release. Patients see only their own released results; staff collection access does not include result editing.
+                </p>
+              </article>
+              <article>
+                <h3>
+                  Walk-in queue
+                </h3>
+                <p>
+                  Staff or Admin can register front-desk patient records and check patients in. Registration at the desk does not automatically create online login credentials.
+                </p>
+              </article>
+              <article>
+                <h3>
+                  Operational records
+                </h3>
+                <p>
+                  Notifications keep users informed about relevant updates. Reports summarize appointment activity, while audit records track changes.
+                </p>
+              </article>
+            </div>
+          </section>
+          <section class="chapter" id="contribution">
+            <h2>
+              My contribution
+            </h2>
+            <p>
+              I contributed to development and QA across the clinic’s web and mobile work. I worked on clinic workflows, interface improvements, and public doctor-profile photos.
+            </p>
+            <h3>
+              Connecting operational steps
+            </h3>
+            <p>
+              I worked on the implementation that connects prescriptions, medicine inventory, lab processes, queue handling, and role-specific views. A prescription is not just a displayed record: dispensing also has to validate a suitable batch and update stock consistently.
+            </p>
+            <h3>
+              Finding integration issues through testing
+            </h3>
+            <p>
+              Testing revealed that several actions, including marking notifications read and cancelling prescriptions, were sending requests the backend could not accept. The fix aligned those requests with the API and added regression checks.
+            </p>
+            <h3>
+              Preserving role boundaries
+            </h3>
+            <p>
+              My work on the clinic workflows included validation and access behavior: patients see their own information, doctors work on assigned consultations, and operational users handle scheduling without a clinical-record bypass.
+            </p>
+          </section>
+          <section class="chapter" id="technical">
+            <h2>
+              Tech stack
+            </h2>
+            <dl class="technical-map">
+              <div>
+                <dt>
+                  Web interface
+                </dt>
+                <dd>
+                  React and Vite provide role-specific pages and a shared HTTP client.
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Mobile client
+                </dt>
+                <dd>
+                  A Flutter companion app connects appointment and record screens to the clinic API.
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Authentication
+                </dt>
+                <dd>
+                  Firebase identifies the signed-in user. The backend checks the token and retrieves the current role and account status.
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Backend & data
+                </dt>
+                <dd>
+                  Express handles validation and workflow rules. MongoDB stores clinic records; transactions keep related changes, such as dispensing and stock movement, together.
+                </dd>
+              </div>
+            </dl>
+            <div class="tags">
+              <span>
+                React
+              </span>
+              <span>
+                Vite
+              </span>
+              <span>
+                Express
+              </span>
+              <span>
+                Firebase
+              </span>
+              <span>
+                MongoDB
+              </span>
+            </div>
+          </section>
+          <section class="chapter" id="testing">
+            <h2>
+              QA & practical learning
+            </h2>
+            <p>
+              Integration tests cover competing bookings for one slot, invalid or inactive scheduling choices, cross-patient access, cancellation, consultation completion, and rollback when an audit write fails.
+            </p>
+            <p>
+              QA also included browser walkthroughs for four user roles and responsive layout checks.
+            </p>
+            <h3>
+              What I practiced
+            </h3>
+            <p>
+              I practiced tracing a workflow across several roles and records. A change that looks small in the interface—dispensing medicine or marking a notification read—still depends on validation, permissions, the request format, and the resulting stored state.
+            </p>
+
+          </section>
+        </div>
+      </div>
+      <div class="case-next">
+        <a class="text-link" href="projects.html"> Explore other projects
+        </a>
+        <a class="text-link" href="contacts.html">
+          Contact me
+        </a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>
+          © 2026 Leah Jane L. Gregorio · Makati City, Philippines
+        </span>
+        <div class="footer-links">
+          <a href="https://github.com/yellll03" target="_blank" rel="noopener">
+            GitHub
+          </a>
+          <a href="mailto:leighlargueza@gmail.com">
+            Email
+          </a>
+          <a href="#top">
+            Back to top
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
